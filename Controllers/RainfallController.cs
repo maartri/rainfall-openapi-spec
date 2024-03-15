@@ -32,9 +32,9 @@ public class RainfallController : ControllerBase
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-    public async Task<IActionResult> Get(string stationId, int resultNo = 10)
+    public async Task<IActionResult> Get(string stationId, int count = 10)
     {
-        if(resultNo > 0 && resultNo < 101)
+        if(count > 0 && count < 101)
         {
             try
             {
