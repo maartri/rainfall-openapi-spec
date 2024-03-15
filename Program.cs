@@ -21,6 +21,7 @@ builder.Services.AddSwaggerGen(c =>
         Description = "An API which provides rainfall reading data"
     });
 });
+builder.Services.AddHttpClient();
 
 var app = builder.Build();
 
